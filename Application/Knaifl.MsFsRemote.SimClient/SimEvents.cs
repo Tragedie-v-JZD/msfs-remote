@@ -1,0 +1,31 @@
+﻿namespace Knaifl.MsFsRemote.SimClient
+{
+    internal enum SimEvents
+    {
+        HEADING_BUG_SET,
+        VOR1_SET,
+        VOR2_SET,
+        AP_ALT_VAR_SET_ENGLISH,
+        AP_SPD_VAR_SET,
+        AUTOPILOT_OFF,
+        AUTOPILOT_ON,
+        AP_NAV1_HOLD_ON,
+        AP_NAV1_HOLD_OFF,
+        AP_HDG_HOLD_ON,
+        AP_HDG_HOLD_OFF,
+        AP_APR_HOLD_ON,
+        AP_APR_HOLD_OFF,
+        FLIGHT_LEVEL_CHANGE_ON,
+        FLIGHT_LEVEL_CHANGE_OFF,
+        AP_ALT_HOLD_ON,
+        AP_ALT_HOLD_OFF,
+        YAW_DAMPER_ON,
+        YAW_DAMPER_OFF,
+        NAV1_RADIO_SET,
+        NAV2_RADIO_SET,
+        ADF_COMPLETE_SET,
+        ADF2_COMPLETE_SET,
+        NAV1_RADIO_SWAP,
+        NAV2_RADIO_SWAP
+    }
+}
