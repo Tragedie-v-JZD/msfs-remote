@@ -54,6 +54,7 @@ namespace Knaifl.MsFsRemote.Windows
             this.UIAppEnabledMode = new System.Windows.Forms.CheckBox();
             this.UINdb2Value = new System.Windows.Forms.TextBox();
             this.UINdb2SetButton = new System.Windows.Forms.Button();
+            this.UIMachSetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UIHdgSetButton
@@ -293,11 +294,22 @@ namespace Knaifl.MsFsRemote.Windows
             this.UINdb2SetButton.UseVisualStyleBackColor = true;
             this.UINdb2SetButton.Click += new System.EventHandler(this.UINdb2SetButton_Click);
             // 
+            // UIMachSetButton
+            // 
+            this.UIMachSetButton.Location = new System.Drawing.Point(116, 99);
+            this.UIMachSetButton.Name = "UIMachSetButton";
+            this.UIMachSetButton.Size = new System.Drawing.Size(47, 23);
+            this.UIMachSetButton.TabIndex = 43;
+            this.UIMachSetButton.Text = "MACH";
+            this.UIMachSetButton.UseVisualStyleBackColor = true;
+            this.UIMachSetButton.Click += new System.EventHandler(this.UIMachSetButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 270);
+            this.Controls.Add(this.UIMachSetButton);
             this.Controls.Add(this.UINdb2Value);
             this.Controls.Add(this.UINdb2SetButton);
             this.Controls.Add(this.UIAppEnabledMode);
@@ -360,6 +372,7 @@ namespace Knaifl.MsFsRemote.Windows
         private System.Windows.Forms.CheckBox UIAppEnabledMode;
         private System.Windows.Forms.TextBox UINdb2Value;
         private System.Windows.Forms.Button UINdb2SetButton;
+        private System.Windows.Forms.Button UIMachSetButton;
     }
 }
 

@@ -7,6 +7,7 @@
         VOR2_SET,
         AP_ALT_VAR_SET_ENGLISH,
         AP_SPD_VAR_SET,
+        AP_MACH_VAR_SET,
         AUTOPILOT_OFF,
         AUTOPILOT_ON,
         AP_NAV1_HOLD_ON,

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net.Http;
 using System.Windows.Forms;
 using Knaifl.MsFsRemote.SimClient;
 
@@ -7,12 +6,9 @@ namespace Knaifl.MsFsRemote.Windows
 {
     public partial class MainForm : Form
     {
-        private readonly HttpClient httpClient;
-
         public MainForm()
         {
             this.InitializeComponent();
-            this.httpClient = new HttpClient();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -58,7 +54,14 @@ namespace Knaifl.MsFsRemote.Windows
             var newSpeed = Convert.ToUInt32(this.UISpeedValue.Text);
 
             simClient.SetSpeed(newSpeed);
+        }
 
+        private void UIMachSetButton_Click(object sender, EventArgs e)
+        {
+            var simClient = new RemoteClient(this.Handle);
+            var newSpeed = Convert.ToUInt32(this.UISpeedValue.Text);
+
+            simClient.SetMachSpeed(newSpeed);
         }
 
         private void UIAutopilotEnabledButton_CheckedChanged(object sender, EventArgs e)

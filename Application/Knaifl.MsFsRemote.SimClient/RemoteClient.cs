@@ -31,9 +31,14 @@ namespace Knaifl.MsFsRemote.SimClient
             this.simConnector.WriteEvent(SimEvents.AP_ALT_VAR_SET_ENGLISH, altitude);
         }
 
-        public void SetSpeed(uint altitude)
+        public void SetSpeed(uint newSpeed)
         {
-            this.simConnector.WriteEvent(SimEvents.AP_SPD_VAR_SET, altitude);
+            this.simConnector.WriteEvent(SimEvents.AP_SPD_VAR_SET, newSpeed);
+        }
+
+        public void SetMachSpeed(uint newSpeed)
+        {
+            this.simConnector.WriteEvent(SimEvents.AP_MACH_VAR_SET, newSpeed);
         }
 
         public void SetNav1(uint frequency)
